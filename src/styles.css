@@ -168,3 +168,10 @@ h5:hover {
   font-family: "Josefin Sans", sans-serif;
   color: #ff8400;
 }
+
+.open-source-code {
+  color: #ff8400;
+  font-size: 17px;
+  line-height: 4;
+  text-align: center;
+}
