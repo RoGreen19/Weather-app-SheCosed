@@ -2,13 +2,31 @@ body {
   display: block;
   margin: 50px 0;
   font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #1b004c,
+    #190442,
+    #170737,
+    #16082d,
+    #140922,
+    #0f0c20,
+    #0c0e1c,
+    #0b0f18,
+    #08131a,
+    #07161a,
+    #07181a,
+    #0a1a19
+  );
 }
-.card,
-.card-1 {
+.first,
+.second {
+  background-color: #02080F;
   display: block;
   margin: 0 auto;
   width: 600px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: none;
+ box-shadow: rgb(240 46 170 / 40%) 0px 0px 0px 5px, rgb(240 46 170 / 30%) 5px 4px, rgb(240 46 170 / 20%) 10px 10px, rgb(240 46 170 / 10%) 15px 15px, rgb(240 46 170 / 5%) 20px 20px;
+}
 }
 
 .first {
@@ -16,6 +34,8 @@ body {
 }
 .card-header {
   font-size: 14px;
+  background-color: #141e2c;
+  color: #fff;
 }
 
 h1 {
