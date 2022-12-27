@@ -20,13 +20,14 @@ body {
 }
 .first,
 .second {
-  background-color: #02080F;
+  background-color: #02080f;
   display: block;
   margin: 0 auto;
   width: 600px;
   border: none;
- box-shadow: rgb(240 46 170 / 40%) 0px 0px 0px 5px, rgb(240 46 170 / 30%) 5px 4px, rgb(240 46 170 / 20%) 10px 10px, rgb(240 46 170 / 10%) 15px 15px, rgb(240 46 170 / 5%) 20px 20px;
-}
+  box-shadow: rgb(240 46 170 / 40%) 0px 0px 0px 5px,
+    rgb(240 46 170 / 30%) 5px 4px, rgb(240 46 170 / 20%) 10px 10px,
+    rgb(240 46 170 / 10%) 15px 15px, rgb(240 46 170 / 5%) 20px 20px;
 }
 
 .first {
@@ -38,10 +39,16 @@ body {
   color: #fff;
 }
 
+.main-weather-picture {
+  position: absolute;
+  width: 190px;
+  top: 35px;
+  right: 242px;
+}
 h1 {
   position: absolute;
-  top: 94px;
-  right: 107px;
+  top: 115px;
+  right: 143px;
   font-size: 91px;
   color: #ff8400;
   text-shadow: 0.04em 0 rgb(0, 0, 0), -0.04em 0 #000, 0 0.04em #000,
@@ -140,24 +147,24 @@ h6 {
 }
 
 .weather-pressure {
-  background: #1a2740;
+  background: #27364e;
 }
 
 .weather-visibility {
-  background: #c8de68;
+  background: #b28ae3;
   color: #1a2740;
 }
 
 .weather-wind {
-  background: #fff;
+  background: #cbd6ff;
   color: #1a2740;
 }
-h3:hover,
-h6:hover,
-h5:hover,
-.weather-pressure:hover,
-.weather-visibility:hover,
-.weather-wind:hover {
+h3,
+h6,
+h5,
+.weather-pressure,
+.weather-visibility,
+.weather-wind {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
