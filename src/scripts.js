@@ -29,18 +29,19 @@ function changeCityName(event) {
 let formForCity = document.querySelector("#city-input");
 formForCity.addEventListener("submit", changeCityName);
 
-//find weather for searchinf city
+//find weather for searching city
 function findWeather(cityName) {
   let apiKey = "670e88793852b42366cd8790c3445dbc";
   let apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric";
 
   function showNewCityTemperature(responce) {
     //change weather
-    let weather = responce.data.weather[0].main;
+    let weather = responce.data.weather[0].description;
+    let weatherDescription = weather[0].toUpperCase() + weather.slice(1);
     let weathertureInCurrentCity = document.querySelector(
       ".current-precipitation"
     );
-    weathertureInCurrentCity.innerHTML = `${weather}`;
+    weathertureInCurrentCity.innerHTML = `${weatherDescription}`;
     //change temperature
     let temperature = Math.round(responce.data.main.temp);
     let temperatureInCurrentCity = document.querySelector("h1");
