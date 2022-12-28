@@ -46,10 +46,10 @@ function findWeather(cityName) {
     let temperature = Math.round(responce.data.main.temp);
     let temperatureInCurrentCity = document.querySelector("h1");
     temperatureInCurrentCity.innerHTML = `${temperature}°`;
-    //change Pressure
-    let pressure = responce.data.main.pressure;
-    let pressureInCurrentCity = document.querySelector(".prassure");
-    pressureInCurrentCity.innerHTML = `${pressure} mb`;
+    //change Humidity
+    let humidity = responce.data.main.humidity;
+    let humidityInCurrentCity = document.querySelector(".humidity");
+    humidityInCurrentCity.innerHTML = `${humidity} %`;
     //change visibility
     let visibility = responce.data.visibility / 1000;
     let visibilityInCurrentCity = document.querySelector(".visibility");
@@ -57,7 +57,7 @@ function findWeather(cityName) {
     //change wind
     let wind = responce.data.wind.speed;
     let windInCurrentCity = document.querySelector(".wind");
-    windInCurrentCity.innerHTML = `${wind} m/s`;
+    windInCurrentCity.innerHTML = `${wind} km/h`;
   }
 
   axios
