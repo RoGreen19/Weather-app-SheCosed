@@ -73,45 +73,41 @@ h1 {
 }
 
 h3 {
-  width: 150px;
   height: 50px;
-  color: #ff8400;
+  color: #b28ae3;
   display: block;
-  text-align: center;
-  margin: 3px 10px 6px;
-  padding: 9px 10px;
-  border-radius: 50px;
-  background: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  text-align: left;
+  margin: 3px 12px 8px;
+  font-size: 52px;
 }
 
 h6 {
-  font-size: small;
   width: 75px;
   height: 25px;
-  text-align: center;
-  margin: 13px 25px 40px;
-  padding: 7px 8px;
-  border-radius: 59px;
-  background: rgb(255, 255, 255);
-  color: #ff8400;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  text-align: left;
+  margin: 12px 22px 15px;
+  color: #b28ae3;
   position: absolute;
   top: 65px;
   left: 6px;
 }
-.time {
-  width: 50px;
+
+.date {
+  width: 97px;
   position: absolute;
-  top: 65px;
-  left: 88px;
+  top: 71px;
+}
+.time {
+  width: 80px;
+  position: absolute;
+  top: 71px;
+  left: 93px;
 }
 
 .current-precipitation {
   position: absolute;
-  top: 95px;
-  left: 20px;
-  width: 97px;
+  top: 98px;
+  left: 6px;
 }
 .search-line {
   border-radius: 59px;
