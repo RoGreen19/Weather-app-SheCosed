@@ -44,7 +44,7 @@ function findWeather(cityName) {
     //change temperature
     let temperature = Math.round(responce.data.main.temp);
     let temperatureInCurrentCity = document.querySelector("h1");
-    temperatureInCurrentCity.innerHTML = `${temperature}°С`;
+    temperatureInCurrentCity.innerHTML = `${temperature}°`;
     //change Pressure
     let pressure = responce.data.main.pressure;
     let pressureInCurrentCity = document.querySelector(".prassure");

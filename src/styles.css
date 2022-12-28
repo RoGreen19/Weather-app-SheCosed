@@ -42,6 +42,8 @@ body {
   background-color: #141e2c;
   color: #fff;
 }
+
+.current-city-button,
 .celsius-button,
 .fahrenheit-button {
   border-radius: 4px;
@@ -62,6 +64,10 @@ body {
   touch-action: manipulation;
 }
 
+.current-city-button {
+  right: 110px;
+}
+
 .celsius-button {
   right: 69px;
 }
@@ -70,18 +76,27 @@ body {
   right: 30px;
 }
 
+.current-city-button:hover,
+.celsius-button:hover,
+.fahrenheit-button:hover {
+  box-shadow: 1px 1px 0px 0px #ccad00, 2px 2px 0px 0px #ff8400,
+    3px 3px 0px 0px #ad2681;
+}
+
 .main-weather-picture {
   position: absolute;
   width: 235px;
   top: 54px;
-  right: 235px;
+  right: 217px;
   filter: drop-shadow(2px 2px 10px rgb(128, 123, 123));
 }
 
 h1 {
   position: absolute;
+  margin: 0 auto;
+  display: block;
   top: 149px;
-  right: 63px;
+  right: 125px;
   font-size: 143px;
   color: #9f63c7;
   text-shadow: 0.04em 0 rgb(0, 0, 0), -0.04em 0 #000, 0 0.04em #000,
