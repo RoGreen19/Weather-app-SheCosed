@@ -45,17 +45,18 @@ body {
 
 .main-weather-picture {
   position: absolute;
-  width: 201px;
-  top: 50px;
-  right: 238px;
+  width: 235px;
+  top: 54px;
+  right: 235px;
   filter: drop-shadow(2px 2px 10px rgb(128, 123, 123));
 }
+
 h1 {
   position: absolute;
-  top: 147px;
-  right: 128px;
-  font-size: 108px;
-  color: #ff8400;
+  top: 149px;
+  right: 63px;
+  font-size: 143px;
+  color: #9f63c7;
   text-shadow: 0.04em 0 rgb(0, 0, 0), -0.04em 0 #000, 0 0.04em #000,
     0 -0.04em #000;
 }
@@ -79,6 +80,8 @@ h3 {
   text-align: left;
   margin: 3px 12px 8px;
   font-size: 52px;
+  text-shadow: 0.04em 0 rgb(0 0 0), -0.04em 0 #000, 0 0.04em #000,
+    0 -0.04em #000;
 }
 
 h6 {
@@ -90,6 +93,8 @@ h6 {
   position: absolute;
   top: 65px;
   left: 6px;
+  text-shadow: 0.04em 0 rgb(0 0 0), -0.04em 0 #000, 0 0.04em #000,
+    0 -0.04em #000;
 }
 
 .date {
@@ -196,6 +201,10 @@ h5:hover {
   color: #ff8400;
 }
 
+.week-weather-icon {
+  width: 68px;
+  filter: drop-shadow(2px 2px 29px rgb(128, 123, 123));
+}
 .open-source-code {
   color: #ff8400;
   font-size: 17px;
