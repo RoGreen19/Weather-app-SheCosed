@@ -42,6 +42,33 @@ body {
   background-color: #141e2c;
   color: #fff;
 }
+.celsius-button,
+.fahrenheit-button {
+  border-radius: 4px;
+  text-align: left;
+  position: absolute;
+  top: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0px 3px;
+  box-shadow: 1px 1px 0px 0px #ad2681, 2px 2px 0px 0px #ad2681,
+    3px 3px 0px 0px #ad2681;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.celsius-button {
+  right: 69px;
+}
+
+.fahrenheit-button {
+  right: 30px;
+}
 
 .main-weather-picture {
   position: absolute;
@@ -128,7 +155,7 @@ h6 {
   top: 10px;
   right: 20px;
   border-radius: 59px;
-  background-color: #c8de68;
+  background-color: #b28ae3;
 }
 
 .card-footer {
