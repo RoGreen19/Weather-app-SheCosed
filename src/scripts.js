@@ -12,7 +12,13 @@ showDate.innerHTML = `${date}.${month + 1}.${year}`;
 let showTime = document.querySelector(".time");
 
 let hours = today.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = today.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 
 showTime.innerHTML = `${hours}:${minutes}`;
 
